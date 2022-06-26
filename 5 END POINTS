@@ -5,8 +5,29 @@ const router = express.Router();
 //Post Method
 router.post('/post', async (req, res) => {
     const data = new Model({
-        name: req.body.name,
-        age: req.body.age
+      "name": "Kapfenberger SV",
+      "ID": "KSV",
+      "country": "Austria"
+    },
+    {
+      "name": "FC RB Salzburg",
+      "ID": "RBS",
+      "country": "Austria"
+    },
+    {
+      "name": "SC Wiener Neustadt",
+      "ID": "WRN",
+      "country": "Austria"
+    },
+    {
+      "name": "LASK Linz",
+      "ID": "ASK",
+      "country": "Austria"
+    },
+    {
+      "name": "SV Ried",
+      "ID": "RIE",
+      "country": "Austria"
     })
 
     try {
